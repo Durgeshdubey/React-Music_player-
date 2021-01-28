@@ -66,7 +66,6 @@ function songs_data() {
             id:uuidv4(),
             active:false,
         },
-        
         {
             name: "Melancholy",
             cover:"https://chillhop.com/wp-content/uploads/2020/11/f78c39b4bb6313ddd0354bef896c591bfb490ff8-1024x1024.jpg",

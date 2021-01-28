@@ -8,5 +8,16 @@ h1,h2,h3{
     color: rgb(56, 56, 56)
 }
 
+body{
+    font-family: 'Josefin Slab', serif;
+}
+
+h3 , h4 {
+    font-weight: 700;
+    color: rgb(100, 100, 100)
+
+}
+
 @import "./Songs";
 @import "./player";
+@import "./sidebarLibrary";

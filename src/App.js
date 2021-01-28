@@ -5,7 +5,8 @@ import Player from './components/Player';
 import Songs from './components/Songs';
 //import songs_data
 import songs_data from './songs_data';
-
+// import librarysong from './components/librarysong';
+import Sidebarlibrary from './components/Sidebarlibrary';
 
 function App () {
 
@@ -27,7 +28,9 @@ function App () {
         <Player setIsPlaying={setIsPlaying} 
         isPlaying={isPlaying} 
         currentSong={currentSong} />
-      </div>
+        <Sidebarlibrary songs={songs} setCurrentSong={setCurrentSong}/>
+       
+      </div>  
   );
 }
 
