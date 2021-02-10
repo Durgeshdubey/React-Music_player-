@@ -1,4 +1,5 @@
 import React from 'react';
+import {playAudio} from '../util';
 // import { isReturnStatement } from 'typescript';
 
 
@@ -24,19 +25,10 @@ const newSongs = songs.map((song) => {
             };
         }
 });
-setSongs(newSongs)
-
-
-            if(isPlaying) {
-                const playpromise = audioRef.current.play();
-                if(playpromise !== undefined){
-                    playpromise.then((audio) => {
-                        audioRef.current.play();
-                    })
-                }
-            }
-    };
-
+    
+setSongs(newSongs);
+    }
+playAudio(isPlaying , audioRef);
     return(
         <div onClick={songSelectHandler} 
         className={`librarysong ${song.active ? 'selected' : ""}`} > 
@@ -47,6 +39,6 @@ setSongs(newSongs)
             </div>
         </div>
     );
-};
+ };
 
-export default librarysong;
+ export default librarysong;
