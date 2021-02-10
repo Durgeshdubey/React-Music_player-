@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
-import librarysong from "./Librarysong";
+// import librarysong from "./Librarysong";
 
-const Nav = ({setLibraryStatus , libraryStatus}) => {
+const Nav = ({setLibraryStatus , libraryStatus }) => {
     return(
         <nav>
         <h1>Waves</h1>

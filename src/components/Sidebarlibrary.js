@@ -2,9 +2,9 @@ import React from 'react';
 import Librarysong from './Librarysong';
 
 
-const sidebarlibrary = ({audioRef, setSongs ,songs , isPlaying , setCurrentSong }) => {
+const sidebarlibrary = ({audioRef, setSongs ,songs , isPlaying , setCurrentSong, libraryStatus }) => {
     return(
-        <div class = "sidebarlibrary">
+        <div className = {`sidebarlibrary ${libraryStatus ? 'active-library' : ''}`}>
             <h2>
                 library
             </h2>
