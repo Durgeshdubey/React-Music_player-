@@ -2,7 +2,7 @@ import React from 'react';
 import Librarysong from './Librarysong';
 
 
-const sidebarlibrary = ({ songs , setCurrentSong }) => {
+const sidebarlibrary = ({audioRef, setSongs ,songs , isPlaying , setCurrentSong }) => {
     return(
         <div class = "sidebarlibrary">
             <h2>
@@ -15,7 +15,10 @@ const sidebarlibrary = ({ songs , setCurrentSong }) => {
                  song={song} 
                  setCurrentSong={setCurrentSong}
                  id={song.id}
-                 key = {song.id}   
+                 key = {song.id}  
+                 audioRef={audioRef} 
+                 isPlaying = {isPlaying}
+                 setSongs = {setSongs}
                 //  audioRed = {audioRef}
                 //  setSongs = {setSongs}
             />

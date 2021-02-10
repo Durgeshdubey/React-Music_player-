@@ -73,7 +73,7 @@ function songs_data() {
             audio:"https://mp3.chillhop.com/serve.php/?mp3=11778",
             color:["#FDD16C","#4E64A2"],
             id:uuidv4(),
-            active:true,
+            active:false,
         },
         {
             name: "Today Feels Like Everyday",

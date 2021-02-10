@@ -7,6 +7,9 @@
   background-color:whitesmoke;
   box-shadow: 2px 2px 50px rgb(160, 150, 150);
   overflow: scroll;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  opacity: 0;
   h2{
       padding: 2rem;
   }
@@ -50,4 +53,7 @@
     scrollbar-color: rgba(155,155,155,0.5);
     border-radius: 20px;
     border: transparent;
+}
+.selected {
+    background-color: rgb(255, 211, 211);
 }
