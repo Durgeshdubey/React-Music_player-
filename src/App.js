@@ -12,16 +12,9 @@ import  Nav  from "./components/Nav";
 
 function App () {
 
-  const audioRef = useRef(null);
-  // state
-
+ const audioRef = useRef(null);
  const [ songs, setSongs ] = useState(songs_data());
-
- // state current song
-
  const [ currentSong , setCurrentSong ] = useState(songs[0]);
-
-
  // song interaction state
 
  const [ isPlaying , setIsPlaying ] = useState(false);
@@ -31,8 +24,8 @@ function App () {
   animationPercentage: 0,
 });
 
-const [libraryStatus, setLibraryStatus] = useState(false);
-const timeUpdateHandler = (e) => {
+  const [libraryStatus, setLibraryStatus] = useState(false);
+  const timeUpdateHandler = (e) => {
   const current = e.target.currentTime;
   const duration = e.target.duration;
   // calculate %
